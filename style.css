@@ -16,7 +16,7 @@ body {
 }
 
 .container{
-    margin-top: 18%;
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,42 +39,62 @@ body {
     font-size: 16px;
     margin-top: 20px;
     height: 100px;
-    width: 200px;
+    width: 220px;
 }
 .reset{
     background-color: rgb(210, 210, 210);
     color: #000;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .pause{
     background-color: rgb(210, 210, 210);
     color: #000;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .iniciar{
     background-color: rgb(210, 210, 210);
     color: #000;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .iniciar:hover {
     background-color: rgb(129, 129, 129);
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
 }
 .reset:hover {
     background-color: rgb(129, 129, 129);
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
 }
 .pause:hover {
     background-color: rgb(129, 129, 129);
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: 30px;
+    width: 60px;
 }
 
 .timet{
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
-    color: #fff;
+}
+.modo{
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
 }
