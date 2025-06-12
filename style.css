@@ -1,0 +1,49 @@
+body {
+    background-color: #575050;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-top:15%;
+    justify-items: center;
+    align-items: center;
+}
+
+#cronometro {
+    font-size: 48px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttons {
+    background-color: #997070;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    height: 100px;
+    width: 200px;
+}
+.reset{
+    background-color: bisque;
+}
+.pause{
+    background-color: bisque;
+}
+.iniciar{
+    background-color: bisque;
+}
+.button:hover {
+    background-color: #a0a0a0;
+}
+
+.timet{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+}

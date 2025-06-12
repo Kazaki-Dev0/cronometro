@@ -7,20 +7,15 @@ let resetButton = document.getElementById('reset');
 let seconds = 0;
 let intervalId = null;
 
-// Função para formatar o tempo em minutos e segundos
-function formatTime(seconds) {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${String(minutes).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
-}
+// Adiciona eventos aos botões
+startButton.addEventListener('click', iniciarTimer);
+pauseButton.addEventListener('click', pauseTimer);
+resetButton.addEventListener('click', resetTimer);
 
-// Função para atualizar o display do cronômetro
-function updateDisplay() {
-    timerDisplay.textContent = formatTime(seconds);
-}
+
 
 // Função para iniciar o cronômetro
-function startTimer() {
+function iniciarTimer() {
     if (!intervalId) {
         intervalId = setInterval(() => {
             seconds++;
@@ -42,10 +37,16 @@ function resetTimer() {
     updateDisplay();
 }
 
-// Adiciona eventos aos botões
-startButton.addEventListener('click', startTimer);
-pauseButton.addEventListener('click', pauseTimer);
-resetButton.addEventListener('click', resetTimer);
+// Função para formatar o tempo em minutos e segundos
+function formatTime(seconds) {
+    const minutos = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${String(minutos).padStart(2, '0')}:${String(remainingSeconds).padStart(2, '0')}`;
+}
+// Função para atualizar o display do cronômetro
+function updateDisplay() {
+    timerDisplay.textContent = formatTime(seconds);
+}
 
 // Inicializa o display
 updateDisplay();
