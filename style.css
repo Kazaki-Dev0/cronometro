@@ -2,9 +2,9 @@ body {
     background-color: #575050;
     color: #fff;
     font-family: Arial, sans-serif;
-    padding-top:15%;
     justify-items: center;
     align-items: center;
+    
 }
 
 #cronometro {
@@ -15,8 +15,20 @@ body {
     text-align: center;
 }
 
+.container{
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 15vw;
+    background-color: rgb(145, 141, 141);
+    border-radius: 10px;
+}
+
 .buttons {
-    background-color: #997070;
+    background-color: #746969;
     color: #000;
     display: flex;
     justify-content: space-around;
@@ -30,20 +42,39 @@ body {
     width: 200px;
 }
 .reset{
-    background-color: bisque;
+    background-color: rgb(210, 210, 210);
+    color: #000;
+    border-radius: 5px;
 }
 .pause{
-    background-color: bisque;
+    background-color: rgb(210, 210, 210);
+    color: #000;
+    border-radius: 5px;
 }
 .iniciar{
-    background-color: bisque;
+    background-color: rgb(210, 210, 210);
+    color: #000;
+    border-radius: 5px;
 }
-.button:hover {
-    background-color: #a0a0a0;
+.iniciar:hover {
+    background-color: rgb(129, 129, 129);
+    color: #ffffff;
+    border-radius: 5px;
+}
+.reset:hover {
+    background-color: rgb(129, 129, 129);
+    color: #ffffff;
+    border-radius: 5px;
+}
+.pause:hover {
+    background-color: rgb(129, 129, 129);
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .timet{
     font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 20px;
     color: #fff;
 }
